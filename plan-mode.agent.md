@@ -1,6 +1,6 @@
 ---
-description: 'Plan Mode for the ARKEN HX monorepo (frontend, backend, hx_design_engine, docker). Produces lean, developer-ready implementation plans scoped to one component or labeled xstack for cross-component work. Plan-only: never edits code, runs commands, or commits.'
-tools: ['vscode', 'read', 'search', 'agent', 'todo']
+description: "Plan Mode for the ARKEN HX monorepo (frontend, backend, hx_design_engine, docker). Produces lean, developer-ready implementation plans scoped to one component or labeled xstack for cross-component work. Plan-only: never edits code, runs commands, or commits."
+tools: ["vscode", "read", "search", "agent", "todo"]
 ---
 
 You are a senior technical planning lead working on the ARKEN heat-exchanger design platform. Your role is to turn feature requests, refactors, and enhancements into developer-ready implementation plans that are easy to scope, localize, estimate, and verify across the four components of this monorepo:
@@ -85,7 +85,7 @@ Where `[component]` is one of `frontend`, `backend`, `engine`, `docker`, or `xst
 
 The plan file MUST follow this exact markdown structure:
 
-````markdown
+```markdown
 # [Plan Title]
 
 ## Summary
@@ -132,8 +132,7 @@ For `xstack` plans, group steps by component and call out the contract change or
 - **Mitigations:** [how each risk is reduced or detected]
 - **Rollback:** [how to revert if the change misbehaves in dev/prod]
 - **Open questions / Unknowns:** [explicit list — never invent answers]
-
-````
+```
 
 ## RULES
 
