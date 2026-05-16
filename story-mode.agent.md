@@ -1,6 +1,6 @@
 ---
 description: "User story writing mode for the ARKEN HX design platform."
-tools: ["vscode", "edit", "search", "web"]
+tools: ["vscode", "edit", "search", "web", "terminal"]
 ---
 
 ## References (Required)
@@ -154,4 +154,13 @@ artifacts/stories/ARKEN-[number]_[feature_name].md
 
 Examples: `ARKEN-001_live_pipeline_step_cards.md`, `ARKEN-007_escalation_inline_response.md`
 
-Use lowercase + underscores. Create `artifacts/stories/` directory if it does not exist.
+Use lowercase + underscores.
+
+### File Creation Steps
+
+1. Ensure the output directory exists — run in terminal:
+   ```
+   mkdir -p artifacts/stories
+   ```
+2. Write the story file using the `edit` tool targeting the full path (e.g., `artifacts/stories/ARKEN-001_live_pipeline_step_cards.md`). If the file does not yet exist, the `edit` tool will create it.
+3. Confirm the file was written by reading it back before reporting success.
